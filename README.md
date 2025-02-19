@@ -5,12 +5,18 @@ Ce projet est une architecture de microservices permettant la gestion des servic
 
 ## Architecture
 Le projet est composé des microservices suivants :
-- **Eureka Server** : Service de découverte permettant l'enregistrement des autres microservices.
-- **Gateway Service** : Passerelle API permettant la redirection des requêtes.
-- **Patient Service** : Gestion des patients.
-- **Practitioner Service** : Gestion des praticiens.
+- **Eureka Server** : Service de découverte permettant l'enregistrement des autres microservices. Intègre un module Admin pour récupérer les logs et autres informations.
+- **Gateway Service** : Passerelle API permettant la redirection des requêtes. Intègre un watcher qui requête les microservices et gère la résilience.
+- **Patient Service** : Microservice de gestion des patients.
+- **Practitioner Service** : Microservice de gestion des praticiens.
 
 Chaque microservice est développé en Spring Boot avec Maven.
+
+### Ordre de lancement :
+1. **Eureka Server**
+2. **Patient Service**
+3. **Practitionner Service**
+4. **Gateway Service**
 
 ## Prérequis
 Avant d'exécuter le projet, assurez-vous d'avoir installé :
