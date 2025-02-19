@@ -1,0 +1,38 @@
+services:
+  eureka-server:
+    image: eureka-server:1.0
+    ports:
+      - "8761:8761"
+    networks:
+      - medical-network
+
+  gateway-service:
+    image: gateway-service:1.0
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-server
+    networks:
+      - medical-network
+
+  patient-service:
+    image: patient-service:1.0
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-server
+    networks:
+      - medical-network
+
+  practitioner-service:
+    image: practitioner-service:1.0
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-server
+    networks:
+      - medical-network
+
+networks:
+  medical-network:
+    driver: bridge
