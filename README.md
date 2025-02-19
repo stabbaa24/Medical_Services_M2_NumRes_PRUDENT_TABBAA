@@ -7,7 +7,6 @@ Ce projet est une architecture de microservices permettant la gestion des servic
 Le projet est composé des microservices suivants :
 - **Eureka Server** : Service de découverte permettant l'enregistrement des autres microservices.
 - **Gateway Service** : Passerelle API permettant la redirection des requêtes.
-- **Appointment Service** : Gestion des rendez-vous.
 - **Patient Service** : Gestion des patients.
 - **Practitioner Service** : Gestion des praticiens.
 
@@ -35,9 +34,8 @@ docker-compose up -d
 ### 3. Accéder aux services
 - **Eureka Server** : [http://localhost:8761](http://localhost:8761)
 - **Gateway Service** : [http://localhost:8080](http://localhost:8080)
-- **Appointment Service** : [http://localhost:8081](http://localhost:8081)
-- **Patient Service** : [http://localhost:8082](http://localhost:8082)
-- **Practitioner Service** : [http://localhost:8083](http://localhost:8083)
+- **Patient Service** : [http://localhost:8082](http://localhost:8081)
+- **Practitioner Service** : [http://localhost:8083](http://localhost:8082)
 
 ## Configuration
 Les configurations des microservices (ports, bases de données, etc.) se trouvent dans leurs fichiers `application.properties` ou `application.yml`.
