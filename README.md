@@ -43,6 +43,16 @@ docker-compose up -d
 - **Patient Service** : [http://localhost:8082](http://localhost:8081)
 - **Practitioner Service** : [http://localhost:8083](http://localhost:8082)
 
+## Swagger
+Un Swagger est disponible pour chaque microservice (excepté Eureka) et est accessible via l'URL respective du service.
+
+### Accès au Swagger
+- **Patient Service** : [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html)
+- **Practitioner Service** : [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html)
+- **Gateway Service** : [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+Un Swagger est disponible pour chaque microservice (excepté Eureka) et est accessible via l'URL respective du service.
+
 ## Configuration
 Les configurations des microservices (ports, bases de données, etc.) se trouvent dans leurs fichiers `application.properties` ou `application.yml`.
 
