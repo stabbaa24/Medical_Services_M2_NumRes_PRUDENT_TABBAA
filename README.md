@@ -47,8 +47,8 @@ docker-compose up -d
 Un Swagger est disponible pour chaque microservice (excepté Eureka) et est accessible via l'URL respective du service.
 
 ### Accès au Swagger
-- **Patient Service** : [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html)
-- **Practitioner Service** : [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html)
+- **Patient Service** : [http://localhost:8082/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+- **Practitioner Service** : [http://localhost:8083/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html)
 - **Gateway Service** : [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 Un Swagger est disponible pour chaque microservice (excepté Eureka) et est accessible via l'URL respective du service.
